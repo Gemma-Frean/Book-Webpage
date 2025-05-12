@@ -10,60 +10,55 @@
 }
 
 body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style the header */
-.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
 }
 
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-/* Style the footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column {
-    width: 150%;
-  }
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
 }
 </style>
 </head>
 <body>
 
-<h2>Top Fifteen Books</h2>
-<p>The following two graphs have book titles, genre, book prices, year of publication, rank and ratings of top fifteen books.</p>
-
-<div class="header">
-  <h2>Book Prices, Year of Publication, Rank and Rating</h2>
+<div class="sidenav">
+  <p>There are no outliers in the prices of books because the upper fence is $35.385 and the lower fence is below $0, and all the book prices fall in between these two values. The book prices, on average, is $14.86 and the median is $13.79.There is no outliers in the ratings because the upper fence is 5.325 and the lower fence is 3.925, and all the values all fall inside those two values. The average ranking of this data is 4.58 and the median is 4.6.</p>
 </div>
 
-<div class="row">
-  <div class="column" style="background-color:#aaa;"><p>There are no outliers in the prices of books because the upper fence is $35.385 and the lower fence is below $0, and all the book prices fall in between these two values. The book prices, on average, is $14.86 and the median is $13.79.There is no outliers in the ratings because the upper fence is 5.325 and the lower fence is 3.925, and all the values all fall inside those two values. The average ranking of this data is 4.58 and the median is 4.6.</p></div>
-  <div class="column" style="background-color:#bbb;"><div class='tableauPlaceholder' id='viz1743038889092' style='position: relative'><noscript><a href='#'><img alt='Top Fifteen Books (Book Price &amp; Year of Publication) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TopFifteenBooks&#47;TopFifteenBooksBookPriceYearofPublication&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TopFifteenBooks&#47;TopFifteenBooksBookPriceYearofPublication' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TopFifteenBooks&#47;TopFifteenBooksBookPriceYearofPublication&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1743038889092');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></div>
+<div class="content">
+  <h2>Top Fifteen Books</h2>
+  <p>The following two graphs have book titles, genre, book prices, year of publication, rank and ratings of top fifteen books.</p>
+  <p>class='tableauPlaceholder' id='viz1743038889092' style='position: relative'><noscript><a href='#'><img alt='Top Fifteen Books (Book Price &amp; Year of Publication) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TopFifteenBooks&#47;TopFifteenBooksBookPriceYearofPublication&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TopFifteenBooks&#47;TopFifteenBooksBookPriceYearofPublication' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TopFifteenBooks&#47;TopFifteenBooksBookPriceYearofPublication&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1743038889092');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);</p>
 </div>
-  
+
 </body>
 </html>
